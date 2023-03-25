@@ -1,0 +1,145 @@
+.reservation_container {
+  background-color: #fff;
+  //   padding: 20px;
+  height: 100vh;
+  //   position: fixed;
+  top: 10%;
+  margin: auto;
+  overflow-x: hidden;
+  border: 2px solid #fff;
+  color: #010103;
+  height: 100vh;
+  padding-right: 2px;
+  width: 63rem;
+  z-index: 999999999999;
+  .reservation_header {
+    align-items: center;
+    background-color: #ff4d30;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .reservation_container__message {
+    background-color: #ffeae6;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    h4 {
+      margin: 0;
+      color: #ff4d30;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    p {
+      color: #777;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  .reservation_container__car-info {
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 47%, 0.624);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+    .dates-div {
+      .reservation_container__car-info__dates {
+        h5 {
+          margin: 0;
+          color: #ff4d30;
+          font-size: 1.4rem;
+        }
+        h6 {
+          margin: 0;
+        }
+        span {
+          display: flex;
+          gap: 5px;
+          flex-direction: column;
+          .times_heading {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            i {
+              color: #777;
+              font-size: 1.2rem;
+              padding-top: 0.2rem;
+            }
+            h6 {
+              font-size: 1.2rem;
+              margin-bottom: 0.2rem;
+              margin-top: 0.2rem;
+            }
+          }
+
+          div {
+            p {
+              color: #777;
+              font-size: 1rem;
+              .input-time {
+                cursor: pointer;
+                font-size: 14px;
+                text-align: center;
+                width: 8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .reservation_container__person-info {
+    .info-form {
+      .info-form__2col {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        span {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .info-form__1col {
+        span {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      label {
+        color: #777;
+        font-size: 1rem;
+        font-weight: 500;
+        b {
+          color: #ff4d30;
+        }
+      }
+      input {
+        background-color: #dbdbdb;
+        border: none;
+        color: #555;
+        font-size: 1rem;
+        font-weight: 500;
+        outline: none;
+        padding: 14px 15px;
+      }
+      .error-modal {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .booking-modal__car-info {
+    display: flex;
+  }
+  .reserve-button {
+    padding: 20px;
+    border-right-color: green;
+  }
+}
