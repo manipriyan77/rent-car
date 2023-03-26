@@ -78,7 +78,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="home-link" to="/">
+              <Link className="home-link" to="/models">
                 Vehicle models
               </Link>
             </li>

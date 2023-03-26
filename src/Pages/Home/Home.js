@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Accordion from "../../Components/Accordion";
 import Bookcar from "../../Components/BookCar/Bookcar";
 import Hero from "../../Components/Hero/Hero";
 import Models from "../../Components/Models";
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Bookcar />
       <Models />
+      <Accordion />
     </div>
   );
 };

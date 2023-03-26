@@ -66,43 +66,41 @@ const Models = () => {
           {CAR_DATA.map((data, i) => {
             if (modelName === data.name) {
               return (
-                <table key={i}>
-                  <thead>
-                    <tr>
-                      <th>${data.price} /rent per day</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Model</td>
-                      <td>{data.model}</td>
-                    </tr>
-                    <tr>
-                      <td>Mark</td>
-                      <td>{data.mark}</td>
-                    </tr>
-                    <tr>
-                      <td>Year</td>
-                      <td>{data.year}</td>
-                    </tr>
-                    <tr>
-                      <td>Doors</td>
-                      <td>{data.doors}</td>
-                    </tr>
-                    <tr>
-                      <td>AC</td>
-                      <td>{data.air}</td>
-                    </tr>
-                    <tr>
-                      <td>Transmission</td>
-                      <td>{data.transmission}</td>
-                    </tr>
-                    <tr>
-                      <td>Fuel</td>
-                      <td>{data.fuel}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <>
+                  <div className="models_select_table_heading">
+                    <span>${data.price}</span> /rent per day
+                  </div>
+                  <div className="models_select_table_description_container">
+                    <div className="models_select_table_description">
+                      <span>Model</span>
+                      <span>{data.model}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>Mark</span>
+                      <span>{data.mark}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>Year</span>
+                      <span>{data.year}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>Doors</span>
+                      <span>{data.doors}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>AC</span>
+                      <span>{data.air}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>Transmission</span>
+                      <span>{data.transmission}</span>
+                    </div>
+                    <div className="models_select_table_description">
+                      <span>Fuel</span>
+                      <span>{data.fuel}</span>
+                    </div>
+                  </div>
+                </>
               );
             } else {
               return null;

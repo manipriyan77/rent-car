@@ -1,0 +1,28 @@
+.modelbox_container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+  //   width: 110rem;
+  gap: 3rem;
+  margin: 0px auto;
+  padding: 10rem 0px;
+  max-width: 85%;
+  .modelbox {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(213, 213, 213);
+    border-image: initial;
+    border-radius: 0.3rem;
+
+    img {
+      max-width: 300px;
+      max-height: 150px;
+      
+    }
+  }
+}
